@@ -1,19 +1,22 @@
 ccfinderx
 =========
 
-To compile the project on the development PC execute:
-1) autoreconf -i
-2) cd build
-3) ../configure
-4) make
-
-
 Dependencies:
-autoconf, automake, build-essential, 
+autotools, build-essential, 
 libboost-all-dev,
 openjdk-7-dev, ant, 
 libicu4j-java, libswt-gtk-java, libtrove-java, libswt-cairo-gtk-3-jni
+and others(?)
 
-To run the project execute:
+To compile the project:
+1) aclocal
+2) automake
+3) autoconf
+4) cd build
+5) PYTHON=python2 ../configure
+6) make
+
+GUI does not work.  Use CLI
 cd build
-gemx.sh
+./ccfx -h
+for usages
