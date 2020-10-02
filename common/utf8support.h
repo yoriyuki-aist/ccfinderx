@@ -10,6 +10,8 @@
 #include <unicode/uchar.h>
 #include <unicode/schriter.h>
 
+using namespace icu_66;
+
 typedef UChar32 MYWCHAR_T; // 4byte
 
 size_t countCharUTF8String(const char *str, size_t strLength);

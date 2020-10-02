@@ -1873,8 +1873,8 @@ private:
 							assert(fileLength < std::numeric_limits<size_t>::max());
 							inputFileLengths[selectedToInputTable[fi]] = fileLength;
 							if (
-                                (fileLength >= optionB) &&
-                                ((lengthLimit == 0) || (fileLength <= *lengthLimit))
+                                (fileLength >= optionB)
+ //                               ((lengthLimit == 0) || (fileLength <= *lengthLimit))
                                )
                             {
 								const InputFileData &fileFi = inputFiles[selectedToInputTable[fi]];

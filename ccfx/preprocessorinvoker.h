@@ -177,7 +177,6 @@ public:
 	int read_script_table(const std:: string &argv0_, std::string *pErrorMessage)
 	{
 		this->argv0 = argv0_;
-
 		std::string dummy;
 		if (pErrorMessage == NULL) {
 			pErrorMessage = &dummy;
